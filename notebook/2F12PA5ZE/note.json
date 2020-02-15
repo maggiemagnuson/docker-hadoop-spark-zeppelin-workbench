@@ -1,0 +1,139 @@
+{
+  "paragraphs": [
+    {
+      "text": "%spark.conf\n\n# If you python path on driver and executor is the same, then you only need to set PYSPARK_PYTHON\nPYSPARK_PYTHON /usr/bin/python\nspark.pyspark.python  /usr/bin/python\n\n# You need to set PYSPARK_DRIVER_PYTHON as well if your python path on driver is different from executors.\nPYSPARK_DRIVER_PYTHON  /usr/bin/python3\nspark.pyspark.driver.python  /usr/bin/python3",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-13 03:17:05.340",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/text"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.io.IOException: Can not change interpreter properties when interpreter process has already been launched\n\tat org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterGroupProperties(InterpreterSetting.java:796)\n\tat org.apache.zeppelin.interpreter.ConfInterpreter.interpret(ConfInterpreter.java:73)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:437)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:188)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler$1.run(FIFOScheduler.java:140)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581563465932_1226451879",
+      "id": "20200213-031105_2128034651",
+      "dateCreated": "2020-02-13 03:11:05.932",
+      "dateStarted": "2020-02-13 03:17:05.404",
+      "dateFinished": "2020-02-13 03:17:05.415",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nlines \u003d sc.textFile(\"/user/admin/shakespeare.txt\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-13 03:12:28.529",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1581563497169_-617391601",
+      "id": "20200213-031137_1495313324",
+      "dateCreated": "2020-02-13 03:11:37.169",
+      "dateStarted": "2020-02-13 03:12:28.577",
+      "dateFinished": "2020-02-13 03:13:13.343",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nfrom operator import add\ncounts \u003d lines.flatMap(lambda x: x.split(\u0027 \u0027)).map(lambda x: (x, 1)).reduceByKey(add)\noutput \u003d counts.collect()",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-13 03:14:14.171",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "http://172.19.0.10:4040/jobs/job?id\u003d0"
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "apps": [],
+      "jobName": "paragraph_1581563548529_-1125988127",
+      "id": "20200213-031228_224382741",
+      "dateCreated": "2020-02-13 03:12:28.529",
+      "dateStarted": "2020-02-13 03:14:14.220",
+      "dateFinished": "2020-02-13 03:14:20.957",
+      "status": "ERROR",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-13 03:13:19.108",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1581563599106_-1473149946",
+      "id": "20200213-031319_224974189",
+      "dateCreated": "2020-02-13 03:13:19.106",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Untitled Note 4",
+  "id": "2F12PA5ZE",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "spark:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

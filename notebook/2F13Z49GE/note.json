@@ -1,0 +1,399 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\nspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-13 02:08:15.760",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.zeppelin.interpreter.InterpreterNotFoundException: No interpreter is binded to this note: 2F13Z49GE"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581398223709_218330948",
+      "id": "20200211-051703_116562341",
+      "dateCreated": "2020-02-11 05:17:03.709",
+      "status": "ERROR",
+      "errorMessage": "org.apache.zeppelin.interpreter.InterpreterNotFoundException: No interpreter is binded to this note: 2F13Z49GE\n\tat org.apache.zeppelin.interpreter.InterpreterFactory.getInterpreter(InterpreterFactory.java:60)\n\tat org.apache.zeppelin.notebook.Paragraph.getBindedInterpreter(Paragraph.java:242)\n\tat org.apache.zeppelin.notebook.Paragraph.execute(Paragraph.java:350)\n\tat org.apache.zeppelin.notebook.Note.run(Note.java:683)\n\tat org.apache.zeppelin.socket.NotebookServer.persistAndExecuteSingleParagraph(NotebookServer.java:1881)\n\tat org.apache.zeppelin.socket.NotebookServer.runParagraph(NotebookServer.java:1840)\n\tat org.apache.zeppelin.socket.NotebookServer.onMessage(NotebookServer.java:262)\n\tat org.apache.zeppelin.socket.NotebookSocket.onWebSocketText(NotebookSocket.java:59)\n\tat org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextMessage(JettyListenerEventDriver.java:189)\n\tat org.eclipse.jetty.websocket.common.message.SimpleTextMessage.messageComplete(SimpleTextMessage.java:69)\n\tat org.eclipse.jetty.websocket.common.events.AbstractEventDriver.appendMessage(AbstractEventDriver.java:66)\n\tat org.eclipse.jetty.websocket.common.events.JettyListenerEventDriver.onTextFrame(JettyListenerEventDriver.java:158)\n\tat org.eclipse.jetty.websocket.common.events.AbstractEventDriver.incomingFrame(AbstractEventDriver.java:162)\n\tat org.eclipse.jetty.websocket.common.WebSocketSession.incomingFrame(WebSocketSession.java:459)\n\tat org.eclipse.jetty.websocket.common.extensions.AbstractExtension.nextIncomingFrame(AbstractExtension.java:182)\n\tat org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.nextIncomingFrame(PerMessageDeflateExtension.java:105)\n\tat org.eclipse.jetty.websocket.common.extensions.compress.CompressExtension.forwardIncoming(CompressExtension.java:142)\n\tat org.eclipse.jetty.websocket.common.extensions.compress.PerMessageDeflateExtension.incomingFrame(PerMessageDeflateExtension.java:85)\n\tat org.eclipse.jetty.websocket.common.extensions.ExtensionStack.incomingFrame(ExtensionStack.java:220)\n\tat org.eclipse.jetty.websocket.common.Parser.notifyFrame(Parser.java:219)\n\tat org.eclipse.jetty.websocket.common.Parser.parse(Parser.java:244)\n\tat org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.readParse(AbstractWebSocketConnection.java:559)\n\tat org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillable(AbstractWebSocketConnection.java:390)\n\tat org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)\n\tat org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)\n\tat org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)\n\tat org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)\n\tat org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)\n\tat org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)\n\tat org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)\n\tat org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)\n\tat org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)\n\tat org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "spark",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:20:57.569",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res2: org.apache.spark.sql.SparkSession \u003d org.apache.spark.sql.SparkSession@38dd4e33\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395170403_949532099",
+      "id": "20200211-042610_1082544780",
+      "dateCreated": "2020-02-11 04:26:10.000",
+      "dateStarted": "2020-02-11 05:20:58.200",
+      "dateFinished": "2020-02-11 05:21:09.555",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val input \u003d sc.textFile(\"/user/admin/shakespeare.txt\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 04:28:00.000",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "input: org.apache.spark.rdd.RDD[String] \u003d /user/admin/shakespeare.txt MapPartitionsRDD[1] at textFile at \u003cconsole\u003e:27\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395177089_1193093477",
+      "id": "20200211-042617_1565751947",
+      "dateCreated": "2020-02-11 04:26:17.000",
+      "dateStarted": "2020-02-11 04:28:00.000",
+      "dateFinished": "2020-02-11 04:28:01.000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val splitContent \u003d input.map(r \u003d\u003e r.split(\" \"))",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 04:30:06.000",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "splitContent: org.apache.spark.rdd.RDD[Array[String]] \u003d MapPartitionsRDD[2] at map at \u003cconsole\u003e:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395280158_1525055680",
+      "id": "20200211-042800_211760711",
+      "dateCreated": "2020-02-11 04:28:00.000",
+      "dateStarted": "2020-02-11 04:30:06.000",
+      "dateFinished": "2020-02-11 04:30:07.000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "splitContent.foreach(line \u003d\u003e println(line.toSeq))",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 04:32:04.000",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395406481_534311938",
+      "id": "20200211-043006_967059015",
+      "dateCreated": "2020-02-11 04:30:06.000",
+      "dateStarted": "2020-02-11 04:32:04.000",
+      "dateFinished": "2020-02-11 04:32:05.000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:21:24.806",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.SparkSession\nspark: org.apache.spark.sql.SparkSession \u003d org.apache.spark.sql.SparkSession@76aabf26\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395435806_-450398415",
+      "id": "20200211-043035_1427372391",
+      "dateCreated": "2020-02-11 04:30:35.000",
+      "dateStarted": "2020-02-11 04:34:38.000",
+      "dateFinished": "2020-02-11 04:34:39.000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val lines \u003d spark.read.textFile(\"/user/admin/shakespeare.txt\")",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:21:26.250",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "lines: org.apache.spark.sql.Dataset[String] \u003d [value: string]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395636445_-469960956",
+      "id": "20200211-043356_432654498",
+      "dateCreated": "2020-02-11 04:33:56.000",
+      "dateStarted": "2020-02-11 05:21:26.378",
+      "dateFinished": "2020-02-11 05:21:29.395",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val counts \u003d lines.rdd.flatMap(line \u003d\u003e line.split(\" \")).map(word \u003d\u003e (word, 1)).reduceByKey(_ + _)",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:21:34.144",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "counts: org.apache.spark.rdd.RDD[(String, Int)] \u003d ShuffledRDD[6] at reduceByKey at \u003cconsole\u003e:25\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395712955_822333978",
+      "id": "20200211-043512_1189715101",
+      "dateCreated": "2020-02-11 04:35:12.000",
+      "dateStarted": "2020-02-11 05:21:34.239",
+      "dateFinished": "2020-02-11 05:21:40.132",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "counts.collect.sortWith(_._2\u003e_._2)",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:31:36.532",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 6.0 failed 4 times, most recent failure: Lost task 1.3 in stage 6.0 (TID 30, 172.24.0.11, executor 0): java.lang.ClassCastException: cannot assign instance of scala.collection.immutable.List$SerializationProxy to field org.apache.spark.rdd.RDD.org$apache$spark$rdd$RDD$$dependencies_ of type scala.collection.Seq in instance of org.apache.spark.rdd.MapPartitionsRDD\n\tat java.io.ObjectStreamClass$FieldReflector.setObjFieldValues(ObjectStreamClass.java:2133)\n\tat java.io.ObjectStreamClass.setObjFieldValues(ObjectStreamClass.java:1305)\n\tat java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2237)\n\tat java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)\n\tat java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)\n\tat java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)\n\tat java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)\n\tat java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)\n\tat java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)\n\tat java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)\n\tat java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)\n\tat org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:75)\n\tat org.apache.spark.serializer.JavaSerializerInstance.deserialize(JavaSerializer.scala:114)\n\tat org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:85)\n\tat org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)\n\tat org.apache.spark.scheduler.Task.run(Task.scala:99)\n\tat org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n\tat java.lang.Thread.run(Thread.java:745)\n\nDriver stacktrace:\n  at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1435)\n  at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1423)\n  at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1422)\n  at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)\n  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)\n  at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1422)\n  at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:802)\n  at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:802)\n  at scala.Option.foreach(Option.scala:257)\n  at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:802)\n  at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1650)\n  at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1605)\n  at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1594)\n  at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)\n  at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:628)\n  at org.apache.spark.SparkContext.runJob(SparkContext.scala:1925)\n  at org.apache.spark.SparkContext.runJob(SparkContext.scala:1938)\n  at org.apache.spark.SparkContext.runJob(SparkContext.scala:1951)\n  at org.apache.spark.SparkContext.runJob(SparkContext.scala:1965)\n  at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:936)\n  at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)\n  at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)\n  at org.apache.spark.rdd.RDD.withScope(RDD.scala:362)\n  at org.apache.spark.rdd.RDD.collect(RDD.scala:935)\n  ... 47 elided\nCaused by: java.lang.ClassCastException: cannot assign instance of scala.collection.immutable.List$SerializationProxy to field org.apache.spark.rdd.RDD.org$apache$spark$rdd$RDD$$dependencies_ of type scala.collection.Seq in instance of org.apache.spark.rdd.MapPartitionsRDD\n  at java.io.ObjectStreamClass$FieldReflector.setObjFieldValues(ObjectStreamClass.java:2133)\n  at java.io.ObjectStreamClass.setObjFieldValues(ObjectStreamClass.java:1305)\n  at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2237)\n  at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)\n  at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)\n  at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)\n  at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2231)\n  at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2155)\n  at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2013)\n  at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)\n  at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)\n  at org.apache.spark.serializer.JavaDeserializationStream.readObject(JavaSerializer.scala:75)\n  at org.apache.spark.serializer.JavaSerializerInstance.deserialize(JavaSerializer.scala:114)\n  at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:85)\n  at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:53)\n  at org.apache.spark.scheduler.Task.run(Task.scala:99)\n  at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:322)\n  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\n  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\n  at java.lang.Thread.run(Thread.java:745)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395723014_703477217",
+      "id": "20200211-043523_1463983306",
+      "dateCreated": "2020-02-11 04:35:23.000",
+      "dateStarted": "2020-02-11 05:31:36.601",
+      "dateFinished": "2020-02-11 05:31:38.493",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "counts.co",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:20:57.420",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "foo\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395885812_-348427921",
+      "id": "20200211-043805_1077790225",
+      "dateCreated": "2020-02-11 04:38:05.000",
+      "dateStarted": "2020-02-11 04:39:29.000",
+      "dateFinished": "2020-02-11 04:39:29.000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1581395969188_377547281",
+      "id": "20200211-043929_915215940",
+      "dateCreated": "2020-02-11 04:39:29.000",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Playground",
+  "id": "2F13Z49GE",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

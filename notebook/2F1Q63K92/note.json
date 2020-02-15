@@ -1,0 +1,177 @@
+{
+  "paragraphs": [
+    {
+      "text": "%spark.pyspark\nsc",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:41:56.552",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "python process not runningorg.apache.zeppelin.interpreter.util.InterpreterOutputStream@4a893b2d"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581397224572_-1909326878",
+      "id": "20200211-050024_459820328",
+      "dateCreated": "2020-02-11 05:00:24.572",
+      "dateStarted": "2020-02-11 05:41:56.578",
+      "dateFinished": "2020-02-11 05:41:56.593",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import pandas as pd",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:38:18.621",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cconsole\u003e:1: error: \u0027.\u0027 expected but identifier found.\nimport pandas as pd\n              ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581399253195_-1408070678",
+      "id": "20200211-053413_831679106",
+      "dateCreated": "2020-02-11 05:34:13.195",
+      "dateStarted": "2020-02-11 05:38:18.634",
+      "dateFinished": "2020-02-11 05:38:18.639",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import sys",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:35:16.470",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1581399261433_466715264",
+      "id": "20200211-053421_800504006",
+      "dateCreated": "2020-02-11 05:34:21.434",
+      "dateStarted": "2020-02-11 05:35:16.482",
+      "dateFinished": "2020-02-11 05:35:16.491",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2020-02-11 05:35:41.279",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cconsole\u003e:24: error: object path is not a member of package sys\n       print(sys.path)\n                 ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1581399316470_1590564123",
+      "id": "20200211-053516_43702374",
+      "dateCreated": "2020-02-11 05:35:16.470",
+      "dateStarted": "2020-02-11 05:35:24.652",
+      "dateFinished": "2020-02-11 05:35:24.736",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1581399324630_2042469231",
+      "id": "20200211-053524_1084354053",
+      "dateCreated": "2020-02-11 05:35:24.630",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "New NoteBook",
+  "id": "2F1Q63K92",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "spark:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
